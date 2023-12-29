@@ -1,3 +1,22 @@
 .App {
   text-align: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 30vw;
+  margin: auto;
+}
+
+input {
+  width: 20vw;
+  margin: 1rem 0 0;
+}
+label {
+  margin: 1rem 0 0;
+}

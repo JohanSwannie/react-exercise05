@@ -35,10 +35,15 @@ label {
   margin: 0 0 2rem;
 }
 
-input[type="submit"] {
+.errorMsg {
+  color: red;
+  font-size: 1.5rem;
   text-align: center;
+}
+
+input[type="submit"] {
   width: 8vw;
-  margin: 0 36vw;
+  margin: 2rem 36vw 0;
   padding: 0.4rem;
   background-color: #000;
   color: #fff;

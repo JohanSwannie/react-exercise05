@@ -11,6 +11,7 @@ form {
   height: 80vh;
   border: 2px solid #000;
   margin: auto;
+  background-color: rgb(145, 221, 194);
 }
 
 h2 {

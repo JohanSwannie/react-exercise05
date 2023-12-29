@@ -4,8 +4,24 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+
+  const checkForErrors = () => {
+    const errors = [];
+    if (!email || !password || !confirmPassword) {
+      errors.push("You need to complete all fields");
+    }
+    if ([...email].filter((d) => d === "@").length !== 1) {
+      errors.push("Email field must have one @ sign");
+    }
+
+    alert(errors);
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    checkForErrors();
+  };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>Sign Up</h2>
       <div className="form-fields">
         <label htmlFor="email">Email</label>
@@ -27,6 +43,7 @@ const Form = () => {
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
       </div>
+      <input type="submit"></input>
     </form>
   );
 };

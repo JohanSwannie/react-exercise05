@@ -28,7 +28,7 @@ const Form = () => {
     const errors = checkForErrors();
     setErrorMessage(errors.length ? errors[0] : "Sign Up Successfull");
   };
-  
+
   return (
     <form onSubmit={handleSubmit}>
       <h2>Sign Up</h2>
@@ -37,6 +37,7 @@ const Form = () => {
         <input
           type="text"
           name="email"
+          autoFocus
           onChange={(event) => setEmail(event.target.value)}
         />
         <label htmlFor="password">Password</label>

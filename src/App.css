@@ -28,9 +28,18 @@ h2 {
 
 input {
   width: 20vw;
-  margin: 2rem 0 0;
+  margin: 0 0 2rem;
 }
 
 label {
-  margin: 2rem 0 0;
+  margin: 0 0 2rem;
+}
+
+input[type="submit"] {
+  text-align: center;
+  width: 8vw;
+  margin: 0 36vw;
+  padding: 0.4rem;
+  background-color: #000;
+  color: #fff;
 }

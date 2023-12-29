@@ -28,6 +28,7 @@ const Form = () => {
     const errors = checkForErrors();
     setErrorMessage(errors.length ? errors[0] : "Sign Up Successfull");
   };
+  
   return (
     <form onSubmit={handleSubmit}>
       <h2>Sign Up</h2>

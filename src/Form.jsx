@@ -26,7 +26,7 @@ const Form = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const errors = checkForErrors();
-    setErrorMessage(errors.length ? errors.join(", ") : "Sign Up Successfull");
+    setErrorMessage(errors.length ? errors[0] : "Sign Up Successfull");
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -51,7 +51,7 @@ const Form = () => {
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
       </div>
-      {errorMessage}
+      <div className="errorMsg">{errorMessage}</div>
       <input type="submit"></input>
     </form>
   );

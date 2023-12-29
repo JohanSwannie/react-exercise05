@@ -2,8 +2,20 @@
   text-align: center;
 }
 
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 80vh;
+  border: 2px solid #000;
+  margin: auto;
+}
+
 h2 {
   text-align: center;
+  margin: 4rem 0;
 }
 
 .form-fields {

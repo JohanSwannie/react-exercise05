@@ -4,6 +4,7 @@ const Form = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const checkForErrors = () => {
     const errors = [];
@@ -13,12 +14,19 @@ const Form = () => {
     if ([...email].filter((d) => d === "@").length !== 1) {
       errors.push("Email field must have one @ sign");
     }
-
-    alert(errors);
+    if (password.length < 8) {
+      errors.push("Password need to be at least 8 characters in length");
+    }
+    if (password != confirmPassword) {
+      errors.push("Passwords must match");
+    }
+    return errors;
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    checkForErrors();
+    const errors = checkForErrors();
+    setErrorMessage(errors.length ? errors.join(", ") : "Sign Up Successfull");
   };
   return (
     <form onSubmit={handleSubmit}>
@@ -43,6 +51,7 @@ const Form = () => {
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
       </div>
+      {errorMessage}
       <input type="submit"></input>
     </form>
   );

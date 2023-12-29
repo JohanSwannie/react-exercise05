@@ -17,7 +17,7 @@ const Form = () => {
     if (password.length < 8) {
       errors.push("Password need to be at least 8 characters in length");
     }
-    if (password != confirmPassword) {
+    if (password !== confirmPassword) {
       errors.push("Passwords must match");
     }
     return errors;

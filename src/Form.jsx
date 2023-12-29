@@ -46,7 +46,7 @@ const Form = () => {
           name="password"
           onChange={(event) => setPassword(event.target.value)}
         />
-        <label htmlFor="email">Confirm Password</label>
+        <label htmlFor="confirm-password">Confirm Password</label>
         <input
           type="password"
           name="confirm-password"
@@ -54,7 +54,7 @@ const Form = () => {
         />
       </div>
       <div className="errorMsg">{errorMessage}</div>
-      <input type="submit"></input>
+      <input type="submit" />
     </form>
   );
 };

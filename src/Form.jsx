@@ -36,20 +36,20 @@ const Form = () => {
         <label htmlFor="email">Email</label>
         <input
           type="text"
-          name="email"
+          value={email}
           autoFocus
           onChange={(event) => setEmail(event.target.value)}
         />
         <label htmlFor="password">Password</label>
         <input
           type="password"
-          name="password"
+          value={password}
           onChange={(event) => setPassword(event.target.value)}
         />
         <label htmlFor="confirm-password">Confirm Password</label>
         <input
           type="password"
-          name="confirm-password"
+          value={confirmPassword}
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
       </div>

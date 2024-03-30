@@ -35,12 +35,13 @@ label {
   color: red;
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 input[type="submit"] {
   width: 8vw;
   padding: 0.4rem;
   margin: auto;
-  background-color: #000;
+  background-color: #053302;
   color: #fff;
 }

@@ -39,8 +39,8 @@ label {
 
 input[type="submit"] {
   width: 8vw;
-  margin: 2rem 31vw 0;
   padding: 0.4rem;
+  margin: auto;
   background-color: #000;
   color: #fff;
 }

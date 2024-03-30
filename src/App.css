@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(200, 233, 200);
+}
+
 form {
   display: grid;
   justify-content: center;
@@ -13,7 +17,7 @@ form {
   height: 60vh;
   margin: 20vh auto;
   border: 2px solid #000;
-  background-color: rgb(145, 221, 194);
+  background-color: rgb(214, 245, 233);
 }
 
 h2 {

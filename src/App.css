@@ -34,10 +34,12 @@ h2 {
 
 input {
   width: 20vw;
+  font-size: 1.25rem;
   margin: 0 0 2.5rem;
 }
 
 label {
+  font-size: 1.25rem;
   margin: 0 0 2rem;
 }
 
